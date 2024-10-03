@@ -2,6 +2,7 @@ import json
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from config import Config
 
 # 创建SQLAlchemy的基础类
 Base = declarative_base()
@@ -15,10 +16,10 @@ class Quote(Base):
     author = Column(String(255), nullable=False)
 
 # MySQL数据库连接信息
-DATABASE_URL = "mysql+pymysql://user:password@localhost:3306/digestdemo"
+# mysql+pymysql://user:password@localhost:3306/digestdemo
 
 # 创建数据库引擎
-engine = create_engine(DATABASE_URL, echo=True)
+engine = create_engine(Config.DATABASE_URL, echo=True)
 
 # 创建会话
 Session = sessionmaker(bind=engine)
