@@ -1,5 +1,5 @@
 # publicdigestread
-[书摘集锦 感悟人生](www.digestread.cn)
+[书摘集锦 感悟人生](http://www.digestread.cn)
 
 这是一个基于 **Python** 和 **Vue3** 的书摘集锦展示项目。该项目随机展示一些书摘，旨在帮助人们每天阅读有趣的积极的书籍摘录，充实每一天。
 
