@@ -15,7 +15,7 @@ class Quote(Base):
     author = Column(String(255), nullable=False)
 
 # MySQL数据库连接信息
-DATABASE_URL = "mysql+pymysql://root:root203199@localhost:3306/digestdemo"
+DATABASE_URL = "mysql+pymysql://user:password@localhost:3306/digestdemo"
 
 # 创建数据库引擎
 engine = create_engine(DATABASE_URL, echo=True)
