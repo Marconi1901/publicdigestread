@@ -1,5 +1,5 @@
 # publicdigestread
-[书摘集锦 感悟人生](http://www.digestread.cn)
+<a href="http://www.digestread.cn" target="_blank">书摘集锦 感悟人生</a>
 
 这是一个基于 **Python** 和 **Vue3** 的书摘集锦展示项目。该项目随机展示一些书摘，旨在帮助人们每天阅读有趣的积极的书籍摘录，充实每一天。
 
@@ -64,4 +64,4 @@
 - 随机展示一些书摘，并通过不同颜色进行呈现
 - 每次刷新页面获取不同的书摘不同的颜色进行展示
 
-·演示地址：http://www.digestread.cn
+·演示地址：<a href="http://www.digestread.cn" target="_blank">http://www.digestread.cn</a>
