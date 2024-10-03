@@ -1,6 +1,6 @@
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
-from config import Config
+from app.config import Config
 
 # 创建异步引擎，连接到 MySQL 数据库
 # mysql+aiomysql://user:password@localhost:3306/digestdemo
