@@ -1,0 +1,23 @@
+GET http://60.205.203.199:8080/quotes
+
+###随机获取书摘信息
+GET http://60.205.203.199:8080/quotes/random/4
+
+###获取指定书摘内容
+GET http://60.205.203.199:8080/quotes/1
+
+###获取书摘总数
+GET http://60.205.203.199:8080/quotes/get/total
+
+###创建书摘
+POST http://60.205.203.199:8080/quotes
+Content-Type: application/json
+
+{
+    "content": "一个人可以被毁灭，但不能被打败。",
+    "bookname": "老人与海",
+    "author": "欧内斯特·海明威"
+}
+
+###
+GET https://www.digestread.cn/quotes/1
