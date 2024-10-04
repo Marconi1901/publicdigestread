@@ -1,1 +1,3 @@
 /secure
+*.key
+*.pem
