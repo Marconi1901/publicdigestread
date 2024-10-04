@@ -2,7 +2,15 @@ import json
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from app.config import Config
+
+# 获取 app 目录的绝对路径
+import sys
+import os
+app_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'app'))
+# 将 app 目录添加到 sys.path
+sys.path.append(app_path)
+# 导入 config 模块
+from config import Config
 
 # 创建SQLAlchemy的基础类
 Base = declarative_base()
@@ -15,15 +23,15 @@ class Quote(Base):
     bookname = Column(String(255), nullable=False)
     author = Column(String(255), nullable=False)
 
-# MySQL数据库连接信息
-# mysql+pymysql://user:password@localhost:3306/digestdemo
-
-# 创建数据库引擎
-engine = create_engine(Config.DATABASE_URL, echo=True)
+# 创建数据库引擎 mysql+pymysql://user:password@localhost:3306/digestdemo
+print(f"path:{Config.DATABASE_PY_URL}")
+engine = create_engine(Config.DATABASE_PY_URL, echo=True)
 
 # 创建会话
 Session = sessionmaker(bind=engine)
 session = Session()
+
+before_total = session.query(Quote).count()
 
 # 读取 quotes.json 文件
 with open('quotes.json', 'r', encoding='utf-8') as file:
@@ -45,4 +53,5 @@ for quote in quotes_data:
 # 提交事务
 session.commit()
 
-print("书摘数据已成功处理！")
+after_total = session.query(Quote).count()
+print(f"书摘数据已成功处理！处理前：{before_total},处理后：{after_total}，差异：{after_total-before_total}")
