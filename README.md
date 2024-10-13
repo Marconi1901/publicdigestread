@@ -9,11 +9,15 @@
 - **后端**: python fastapi sqlalchemy
 - **数据库**: mysql
 - **书摘收集**: chatgpt、claude、gemini
+  
+  ![chatgpt收集书摘](./images/chatgpt_quota.png)
+  ![claude收集书摘](./images/claude_quota.png)
 
 ## 特性
 
 - 随机展示一些书摘，并通过不同颜色进行呈现
 - 每次刷新页面获取不同的书摘不同的颜色进行展示
+- 基于安全考虑和小项目，只展示书摘信息，不能维护书摘信息，书摘信息通过AGI或手工收集书摘信息
 
 ## 安装
 
@@ -58,10 +62,15 @@
     location /api/ {
             proxy_pass http://localhost:8080/;
     }
-
+6. 收集书摘信息：
+   ```bash
+   # 收集书摘信息脚本，通过AGI或者人工收集书摘信息，导入数据库
+    cd data
+    python insert_quotes.py
 ## 在线预览
 
 - 随机展示一些书摘，并通过不同颜色进行呈现
 - 每次刷新页面获取不同的书摘不同的颜色进行展示
+  ![书摘展示页面](./images/web_quota.png)
 
 ·演示地址：http://www.digestread.cn
