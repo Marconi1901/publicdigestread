@@ -74,5 +74,4 @@
   ![书摘展示页面](./images/web_quota.png)
 
 - 演示地址：http://www.digestread.cn
-- 小程序
-  ![书摘展示页面](./images/weixin_quota.png)
+  <img src="./images/weixin_quota.png" alt="书摘集锦" width="300">
