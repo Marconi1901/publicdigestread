@@ -73,4 +73,6 @@
 - 每次刷新页面获取不同的书摘不同的颜色进行展示
   ![书摘展示页面](./images/web_quota.png)
 
-·演示地址：http://www.digestread.cn
+- 演示地址：http://www.digestread.cn
+- 小程序
+  ![书摘展示页面](./images/weixin_quota.png)
