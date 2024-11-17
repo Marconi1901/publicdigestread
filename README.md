@@ -1,6 +1,10 @@
 # publicdigestread
 [书摘集锦 感悟人生](http://www.digestread.cn)
 
+# Hi there 👋, I'm 牛经理!
+
+🌟 **大龄程序员** | 🛠️ **代码老司机** | 🚀 **技术探索者** | 🌱 **持续学习中** 
+
 这是一个基于 **Python** 和 **Vue3** 的书摘集锦展示项目。该项目随机展示一些书摘，旨在帮助人们每天阅读有趣的积极的书籍摘录，充实每一天。
 
 ## 技术栈
@@ -76,3 +80,7 @@
 - 演示地址：http://www.digestread.cn
 ## 小程序
 <img src="./images/weixin_quota.png" alt="书摘集锦" width="300">
+
+如果这个仓库对你有帮助，欢迎 star，欢迎提问。如果这个仓库帮你解决了工作问题，可以请即将失业的大龄程序员的我喝杯奶茶：
+<p align="center"><img src="./images/buy-me-a-coffee-wechat.jpg" width="240" height="240
+" alt="" /></p>
