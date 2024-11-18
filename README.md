@@ -81,6 +81,6 @@
 ## 小程序
 <img src="./images/weixin_quota.png" alt="书摘集锦" width="300">
 
-如果这个仓库对你有帮助，欢迎 star，欢迎提问。如果这个仓库帮你解决了工作问题，可以请即将失业的大龄程序员的我喝杯奶茶：
+如果这个仓库对你有帮助，欢迎 star，欢迎提问。如果这个仓库帮你解决了问题，可以请即将失业的大龄程序员的我喝杯奶茶：
 <p align="center"><img src="./images/buy-me-a-coffee-wechat.jpg" width="240" height="240
 " alt="" /></p>
